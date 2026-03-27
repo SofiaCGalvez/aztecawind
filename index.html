@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link href="./dist/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,26 +16,79 @@
         <div class="max-w-7xl mx-auto px-6 py-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center">
-              <img alt="Azteca Wind" class="h-10 w-auto object-contain" src="images/logo.png">
+              <img alt="Azteca Wind" class="h-20 w-auto object-contain" src="images/logo.png">
             </div>
             <div class="hidden md:flex items-center space-x-8">
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Nosotros</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Vuelos</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Galeria</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Contacto</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">FAQ</button>
-              <button class="text-sm font-medium text-white/80 hover:text-blue-400 transition-colors cursor-pointer whitespace-nowrap">Eventos</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Nosotros</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Vuelos</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Galeria</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Contacto</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">FAQ</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Eventos</button>
             </div>
             <button class="hidden md:block px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-500 text-white hover:bg-blue-500/20 transition-all duration-300 cursor-pointer whitespace-nowrap">Reservar vuelo</button>
+
+            <!-- Botón hamburguesa -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl">
+              ☰
+            </button>
         </div>
-      </nav>
+        </div>
+     </nav>
+
+     <div id="mobile-menu" class="fixed inset-0 bg-sky-900 backdrop-blur-lg flex flex-col items-center justify-center space-y-6 text-white text-xl hidden z-[60] divide-y divide-white/20">
+
+      <div class="flex items-center">
+        <img alt="Azteca Wind" class="h-20 w-auto object-contain" src="images/logo.png">
+      </div>
+    <!-- botón cerrar -->
+      <button id="close-menu" class="absolute top-6 right-6 text-4xl">
+        ✕
+      </button>
+
+      <button class="hover:text-[#0d1b3e]/80">Inicio</button>
+      <button class="hover:text-[#0d1b3e]/80">Nosotros</button>
+      <button class="hover:text-[#0d1b3e]/80">Vuelos</button>
+      <button class="hover:text-[#0d1b3e]/80">Galeria</button>
+      <button class="hover:text-[#0d1b3e]/80">Contacto</button>
+      <button class="hover:text-[#0d1b3e]/80">FAQ</button>
+      <button class="hover:text-[#0d1b3e]/80">Eventos</button>
+
+  <!-- footer -->
+      <div class="absolute bottom-8 text-sm text-white/60">
+        © 2026 AztecaWind.com — Todos los derechos reservados
+      </div>
+
+  </div>
+
       <section id="home" class="relative h-screen w-full overflow-hidden">
         <div class="absolute inset-0 w-full h-full">
-          <video autoplay loop playsinline class="w-full h-full object-cover">
-            <source src="videos/homevideo.mp4" type="video/mp4">
+          <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="videos/home2.mp4" type="video/mp4">
           </video>
+          <div class="absolute inset-0 bg-gradient-to-br from-cyan-300/20 via-blue-300/10 to-sky-400/20"></div>
           <div class="absolute inset-0 bg-gradient-to-b from-black/30 via transparent to-black/50"></div>
+        </div>
+        <div class="relative z-10 h-full flex items-center">
+          <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+              <h1 class="text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">VUELA SOBRE
+                <br>
+                <span class="text-[#1e90ff]">EL PACÍFICO</span>
+              </h1>
+              <p class="text-xl text-blue-100/80 font-light mb-10 leading-relaxed">Experiencias aéreas en ultraligeros sobre la costa de Baja California</p>
+              <button class="group inline-flex items-center gap-3 bg-[#1e90ff] text-white px-10 py-4 rounded-full text-lg font-medium hover:bg-[#1a7de0] hover:shadow-2xl hover:shadow-blue-900/50 transition-all duration-300 cursor-pointer whitespace-nowrap">
+                Descubre la Aventura
+                <i class="ri-plane-line text-xl group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="absolute bottom-8 right-8 bg-[#0d1b3e]/80 backdrop-blur-md border border-blue-800/40 rounded-3xl p-6 max-w-xs">
+            <p class="text-xl font-bold text-white mb-1">Una experiencia inolvidable</p>
+            <p class="text-blue-300 text-sm">Vuela sobre paisajes increíbles</p>
+          </div>
         </div>
       </section>
     </div>
@@ -43,5 +97,23 @@
 
 
 
+
+
+  <!-- Codigo Javascript -->
+
+  <script>
+const openBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-menu");
+const menu = document.getElementById("mobile-menu");
+
+ openBtn.addEventListener("click", function(){
+    menu.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", function(){
+    menu.classList.add("hidden");
+  });
+
+</script>
 </body>
 </html>
