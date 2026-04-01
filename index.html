@@ -12,20 +12,20 @@
 <body>
   <div id="root">
     <div class="min-h-screen bg-white">
-      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
         <div class="max-w-7xl mx-auto px-6 py-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center">
-              <img alt="Azteca Wind" class="h-20 w-auto object-contain" src="images/logo.png">
+              <img alt="Azteca Wind" class="h-10 w-auto object-contain" src="images/logo.png">
             </div>
             <div class="hidden md:flex items-center space-x-8">
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Nosotros</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Vuelos</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Galeria</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Contacto</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">FAQ</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#0d1b3e]/80 transition-colors cursor-pointer whitespace-nowrap">Eventos</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Nosotros</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Vuelos</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Galeria</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Contacto</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">FAQ</button>
+              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Eventos</button>
             </div>
             <button class="hidden md:block px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-500 text-white hover:bg-blue-500/20 transition-all duration-300 cursor-pointer whitespace-nowrap">Reservar vuelo</button>
 
@@ -67,7 +67,7 @@
           <video autoplay muted loop playsinline class="w-full h-full object-cover">
             <source src="videos/home2.mp4" type="video/mp4">
           </video>
-          <div class="absolute inset-0 bg-gradient-to-br from-cyan-300/20 via-blue-300/10 to-sky-400/20"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-[#0d1b3e]/80 via-blue-500/10 to-sky-400/20"></div>
           <div class="absolute inset-0 bg-gradient-to-b from-black/30 via transparent to-black/50"></div>
         </div>
         <div class="relative z-10 h-full flex items-center">
@@ -90,6 +90,67 @@
             <p class="text-blue-300 text-sm">Vuela sobre paisajes increíbles</p>
           </div>
         </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+          <span class="text-white text-xs tracking-widest uppercase">Ver mas</span>
+          <i class="ri-arrow-down-line text-white text-lg"></i>
+        </div>
+      </section>
+      <section id="about" class="py-20 bg-gray-950">
+        <div class="max-w-7x1 mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-0">
+            <div class="lg:col-span-2 bg-blue-950 px-12 py-16 flex flex-col justify-center">
+              <h2 class="text-5xl font-bold text-white mb-8 leading-tight">Aviación Recreativa en Rosarito</h2>
+              <p class="text-lg text-blue-100 mb-6 leading-relaxed">Azteca Wind ofrece experiencias aéreas únicas en la hermosa costa de Baja California. Ubicados en Los Alisitos, Playas de Rosarito, te invitamos a vivir la emoción de volar sobre el océano Pacífico.</p>
+              <p class="text-lg text-blue-100 mb-6 leading-relaxed">Con aeronaves ultraligeras de última generación y pilotos certificados, brindamos una oportunidad incomparable para disfrutar del paisaje costero desde una perspectiva completamente diferente.</p>
+              <p class="text-lg text-blue-100 mb-8 leading-relaxed">Nuestra misión es hacer accesible el vuelo deportivo, promoviendo el turismo de aventura y fomentando el interés por la aviación recreativa en la región.</p>
+              <button class="self-start px-8 py-3 rounded-full border-2 border=white text-white font-medium hover:bg-blue-400/10 transition-all duration-300 cursor-pointer whitespace-nowrap inline-flex items-center gap-2">Conoce Más
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+            <div class="lg:col-span-3 relative h-96 lg:h-auto">
+              <img alt="Avion ultraligero" src="images/img6.jpeg">
+              <div class="absolute top-6 left-6 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full">
+                <p class="text-sm font-medium text-medium text-white">Los Alisitos, Rosarito</p>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent rounded-t1-[32px]"></div>
+              <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-xl font-bold mb-1">Más de 500 vuelos realizados</p>
+                <p class="text-base text-white/80">Pilotos certificados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experiencies" class="py-8 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+           <h2 class="text-5xl font-bold text-white mb-4">¿Por Qué Volar con Nosotros?</h2>
+           <p class="text-xl text-gray-400">Seguridad, emoción y vistas incomparables del Pacífico</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div class="bg-blue-950 rounded-2xl p-8 hover:shadow-xl hover:shadow-blue-900/30 transition-all duration-300">
+              <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-eye-line text-3xl text-blue-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-4">Vistas Espectaculares</h3>
+              <p class="text-blue-200 leading-relaxed">Disfruta de vistas panorámicas incomparables del océano Pacífico, playas doradas y las montañas de Baja California desde una perspectiva única.</p>
+            </div>
+            <div class="bg-blue-950 rounded-2xl p-8 hover:shadow-xl hover:shadow-blue-900/30 transition-all duration-300">
+              <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-shield-check-line text-3xl text-blue-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-4">Seguridad Certificada</h3>
+              <p class="text-blue-200 leading-relaxed">Todos nuestros pilotos están certificados y nuestras aeronaves cumplen con los más altos estándares de seguridad y mantenimiento.</p>
+            </div>
+            <div class="bg-blue-950 rounded-2xl p-8 hover:shadow-xl hover:shadow-blue-900/30 transition-all duration-300">
+              <div class="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mb-6">
+                <i class="ri-star-line text-3xl text-blue-400"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-4">Experiencia Única</h3>
+              <p class="text-blue-200 leading-relaxed">Vive una aventura inolvidable que combina adrenalina, belleza natural y la libertad de volar sobre el mar.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -102,6 +163,7 @@
   <!-- Codigo Javascript -->
 
   <script>
+   /// Codigo para nav version mobile botones abrir y cerrar
 const openBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-menu");
 const menu = document.getElementById("mobile-menu");
@@ -113,6 +175,29 @@ const menu = document.getElementById("mobile-menu");
   closeBtn.addEventListener("click", function(){
     menu.classList.add("hidden");
   });
+
+  //Codigo navbar al hacer Scroll
+const navbar= document.getElementById("navbar");
+
+window.addEventListener("scroll", ()=>{
+  if(window.scrollY > 50){
+    navbar.classList.remove("bg-transparent");
+    navbar.classList.add(
+      "bg-gray-950/95",
+      "backdrop-blur-md",
+      "shadow-lg",
+      "shadow-black/40",
+    );
+  }else{
+    navbar.classList.remove(
+      "bg-gray-950-95",
+      "backdrop-blur-md",
+      "shadow-lg",
+      "shadow-black/40"
+    );
+    navbar.classList.add("bg-transparent");
+  }
+});
 
 </script>
 </body>
