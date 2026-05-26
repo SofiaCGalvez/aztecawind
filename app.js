@@ -2,6 +2,7 @@
 const openBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-menu");
 const menu = document.getElementById("mobile-menu");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
 
 openBtn.addEventListener("click", function () {
   menu.classList.remove("hidden");
@@ -9,6 +10,12 @@ openBtn.addEventListener("click", function () {
 
 closeBtn.addEventListener("click", function () {
   menu.classList.add("hidden");
+});
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    menu.classList.add("hidden");
+  });
 });
 
 // Codigo navbar al hacer Scroll
@@ -25,7 +32,7 @@ window.addEventListener("scroll", () => {
     );
   } else {
     navbar.classList.remove(
-      "bg-gray-950-95",
+      "bg-gray-950/95",
       "backdrop-blur-md",
       "shadow-lg",
       "shadow-black/40",

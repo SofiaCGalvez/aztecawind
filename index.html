@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" href="images/logo.png">
   <link href="dist/output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,15 +25,16 @@
               <img alt="Azteca Wind" class="h-10 w-auto object-contain" src="images/logo.png">
             </div>
             <div class="hidden md:flex items-center space-x-8">
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Nosotros</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Vuelos</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Galeria</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Contacto</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">FAQ</button>
-              <button class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Eventos</button>
+              <a href="#home" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Inicio</a>
+              <a href="#about" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Nosotros</a>
+              <a href="#experiencies" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Vuelos</a>
+              <a href="#gallery" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Galeria</a>
+              <a href="#faq" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">FAQ</a>
+              <button type="button" class="text-sm font-medium text-white/50 transition-colors cursor-not-allowed whitespace-nowrap" aria-disabled="true" title="Seccion proximamente">Eventos</button>
+              <a href="#location" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Ubicacion</a>
+              <a href="#contact" class="text-sm font-medium text-white/80 hover:text-[#1e90ff] transition-colors cursor-pointer whitespace-nowrap">Contacto</a>
             </div>
-            <button class="hidden md:block px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-500 text-white hover:bg-blue-500/20 transition-all duration-300 cursor-pointer whitespace-nowrap">Reservar vuelo</button>
+            <a href="https://api.whatsapp.com/send/?phone=526461511073&text=Buen+d%C3%ADa%2C+me+gustar%C3%ADa+solicitar+m%C3%A1s+informaci%C3%B3n+acerca+de+los+vuelos+que+ofrecen.+Quedo+atento+a+su+respuesta.+Gracias." target="_blank" rel="nofollow noopener noreferrer" class="hidden md:block px-6 py-2.5 rounded-full text-sm font-medium border-2 border-blue-500 text-white hover:bg-blue-500/20 transition-all duration-300 cursor-pointer whitespace-nowrap">Reservar vuelo</a>
 
             <!-- Botón hamburguesa -->
             <button id="menu-btn" class="md:hidden text-white text-3xl">
@@ -37,7 +44,7 @@
         </div>
      </nav>
 
-     <div id="mobile-menu" class="fixed inset-0 bg-sky-900 backdrop-blur-lg flex flex-col items-center justify-center space-y-6 text-white text-xl hidden z-[60] divide-y divide-white/20">
+     <div id="mobile-menu" class="fixed inset-0 bg-gray-950 backdrop-blur-lg flex flex-col items-center justify-center space-y-6 text-white text-xl hidden z-[60] divide-y divide-white/20">
 
       <div class="flex items-center">
         <img alt="Azteca Wind" class="h-20 w-auto object-contain" src="images/logo.png">
@@ -47,13 +54,14 @@
         ✕
       </button>
 
-      <button class="hover:text-[#0d1b3e]/80">Inicio</button>
-      <button class="hover:text-[#0d1b3e]/80">Nosotros</button>
-      <button class="hover:text-[#0d1b3e]/80">Vuelos</button>
-      <button class="hover:text-[#0d1b3e]/80">Galeria</button>
-      <button class="hover:text-[#0d1b3e]/80">Contacto</button>
-      <button class="hover:text-[#0d1b3e]/80">FAQ</button>
-      <button class="hover:text-[#0d1b3e]/80">Eventos</button>
+      <a href="#home" class="mobile-menu-link  text-white/80 hover:text-[#1e90ff]">Inicio</a>
+      <a href="#about" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">Nosotros</a>
+      <a href="#experiencies" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">Vuelos</a>
+      <a href="#gallery" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">Galeria</a>
+      <a href="#faq" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">FAQ</a>
+      <button type="button" class="text-white/50 cursor-not-allowed" aria-disabled="true" title="Seccion proximamente">Eventos</button>
+      <a href="#location" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">Ubicacion</a>
+      <a href="#contact" class="mobile-menu-link text-white/80 hover:text-[#1e90ff]">Contacto</a>
 
   <!-- footer -->
       <div class="absolute bottom-8 text-sm text-white/60">
@@ -85,10 +93,6 @@
             </div>
           </div>
 
-          <div class="absolute bottom-8 right-8 bg-[#0d1b3e]/80 backdrop-blur-md border border-blue-800/40 rounded-3xl p-6 max-w-xs">
-            <p class="text-xl font-bold text-white mb-1">Una experiencia inolvidable</p>
-            <p class="text-blue-300 text-sm">Vuela sobre paisajes increíbles</p>
-          </div>
         </div>
         <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
           <span class="text-white text-xs tracking-widest uppercase">Ver mas</span>
@@ -96,27 +100,60 @@
         </div>
       </section>
 
-      <section id="about" class="py-20 bg-gray-950">
-        <div class="max-w-7x1 mx-auto">
-          <div class="grid grid-cols-1 lg:grid-cols-5 gap-0">
-            <div class="lg:col-span-2 bg-blue-950 px-12 py-16 flex flex-col justify-center">
-              <h2 class="text-5xl font-bold text-white mb-8 leading-tight">Aviación Recreativa en Rosarito</h2>
-              <p class="text-lg text-blue-100 mb-6 leading-relaxed">Azteca Wind ofrece experiencias aéreas únicas en la hermosa costa de Baja California. Ubicados en Los Alisitos, Playas de Rosarito, te invitamos a vivir la emoción de volar sobre el océano Pacífico.</p>
-              <p class="text-lg text-blue-100 mb-6 leading-relaxed">Con aeronaves ultraligeras de última generación y pilotos certificados, brindamos una oportunidad incomparable para disfrutar del paisaje costero desde una perspectiva completamente diferente.</p>
-              <p class="text-lg text-blue-100 mb-8 leading-relaxed">Nuestra misión es hacer accesible el vuelo deportivo, promoviendo el turismo de aventura y fomentando el interés por la aviación recreativa en la región.</p>
-              <button class="self-start px-8 py-3 rounded-full border-2 border=white text-white font-medium hover:bg-blue-400/10 transition-all duration-300 cursor-pointer whitespace-nowrap inline-flex items-center gap-2">Conoce Más
-                <i class="ri-arrow-right-line"></i>
-              </button>
-            </div>
-            <div class="lg:col-span-3 relative h-96 lg:h-auto">
-              <img alt="Avion ultraligero" src="images/img6.jpeg">
-              <div class="absolute top-6 left-6 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full">
-                <p class="text-sm font-medium text-medium text-white">Los Alisitos, Rosarito</p>
+      <section id="about" class="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="order-2 lg:order-1">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 mb-6">
+                <i class="ri-map-pin-line text-sky-400 text-sm"></i>
+                <span class="text-xs md:text-sm font-medium text-sky-300 tracking-wide uppercase">Los Alisitos, Rosarito</span>
               </div>
-              <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent rounded-t1-[32px]"></div>
-              <div class="absolute bottom-6 left-6 text-white">
-                <p class="text-xl font-bold mb-1">Más de 500 vuelos realizados</p>
-                <p class="text-base text-white/80">Pilotos certificados</p>
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+                La 
+                <span class="text-sky-400">experiencia </span>
+                de volar
+              </h2>
+              <p class="text-base md:text-lg text-slate-400 leading-relaxed mb-10 max-w-xl">Descubre Rosarito desde el aire con una experiencia diseñada para quienes buscan aventura, paisajes increíbles y momentos inolvidables.
+              En Azteca Wind combinamos emoción, seguridad y vistas espectaculares para ofrecer vuelos recreativos únicos.</p>
+              <div class="space-y-4 mb-10">
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/50 border border-dlate-800/60 hover:border-sky-500/30 transition-colors duration-300">
+                  <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center shrink-0">
+                    <i class="ri-plane-line text-sky-400 text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold text-sm md:text-base mb-1">Sensación de Libertad</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Siente la costa de Baja California desde una perspectiva completamente diferente, con el océano extendiéndose bajo tus pies.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/50 border border-dlate-800/60 hover:border-sky-500/30 transition-colors duration-300">
+                  <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center shrink-0">
+                    <i class="ri-shield-check-line text-sky-400 text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold text-sm md:text-base mb-1">Aventura Segura</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Disfruta la emoción de volar acompañado por pilotos experimentados y aeronaves cuidadosamente preparadas.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/50 border border-dlate-800/60 hover:border-sky-500/30 transition-colors duration-300">
+                  <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center shrink-0">
+                    <i class="ri-sun-cloudy-line text-sky-400 text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-white font-semibold text-sm md:text-base mb-1">Paisajes Inolvidables</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Vistas panorámicas que solo pueden apreciarse desde el aire.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-1 lg:order-2 relative">
+              <div class="relative rounded-2xl overflow-hidden">
+                <img alt="Avion Ultraligero" class="w-full h-[400px] md:h-[520px] object-cover" src="images/img6.jpeg">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to slate-950/10"></div>
               </div>
             </div>
           </div>
@@ -126,7 +163,7 @@
       <section id="experiencies" class="py-20 bg-gray-950">
         <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-16">
-           <h2 class="text-5xl font-bold text-white mb-4">¿Por Qué Volar con Nosotros?</h2>
+           <h2 class="text-5xl font-bold text-white mb-4">¿Por qué volar con nosotros?</h2>
            <p class="text-xl text-gray-400">Seguridad, emoción y vistas incomparables del Pacífico</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
@@ -829,7 +866,7 @@
         </div>
       </section>
 
-      <footer class="bg-gray-950 border-t border-blue-900/30 text-white">
+      <footer id="contact" class="bg-gray-950 border-t border-blue-900/30 text-white">
         <div class="max-w-7xl mx-auto px-6 py-16">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12">
             <div class="lg:col-span-5">
@@ -862,7 +899,7 @@
               </div>
               <div>
                 <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-3">EMAIL</h4>
-                <p class="text-gray-300">info@aztecawind.com</p>
+                <p class="text-gray-300">aztecawind@live.com.mx</p>
               </div>
               <div>
                 <h4 class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-3">HORARIO</h4>
@@ -887,6 +924,16 @@
           </div>
         </div>
       </footer>
+
+      <a href="https://api.whatsapp.com/send/?phone=526461511073&text=Buen+d%C3%ADa%2C+me+gustar%C3%ADa+solicitar+m%C3%A1s+informaci%C3%B3n+acerca+de+los+vuelos+que+ofrecen.+Quedo+atento+a+su+respuesta.+Gracias." target="_blank" rel="nofollow noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 group cursor-pointer">
+        <div class="relative bg-white text-gray-900 px-4 py-2 rounded-xl text-sm font-medium shadow-lg transition-all duration-300 whitespace-nowrap opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+          Escribemos por Whatsapp
+          <div class="absolute right-[-6px] top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45"></div>
+        </div>
+        <div class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-green-900/40 hover:scale-110 transition-transform duration-300">
+          <i class="ri-whatsapp-line text-white text-3xl"></i>
+        </div>
+      </a>
     </div>
   </div>
   <script src="app.js"></script>
